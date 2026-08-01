@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&amp;family=Lora:wght@500;600;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link id="site-styles" rel="stylesheet" href="styles.css">
+    <script>
+      const siteStyles = document.getElementById("site-styles");
+      siteStyles.href = `styles.css?v=${encodeURIComponent(document.lastModified)}`;
+    </script>
     <style>
       a:link {
         text-decoration: none;
