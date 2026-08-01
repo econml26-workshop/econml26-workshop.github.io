@@ -44,10 +44,6 @@ h6,
   pointer-events: none;
 }
 
-.section-intro {
-  max-width: 760px;
-}
-
 .theme-card {
   height: 100%;
   padding: 2rem;
