@@ -88,6 +88,10 @@ h6,
   pointer-events: none;
 }
 
+.subsection-title {
+  font-size: 1.5rem;
+}
+
 .theme-card {
   height: 100%;
   padding: 2rem;
@@ -98,14 +102,28 @@ h6,
   box-shadow: 0 0.8rem 2rem rgba(33, 52, 85, 0.08);
 }
 
-.theme-card h3 {
+.theme-card h3,
+.theme-card h4 {
   margin-bottom: 1rem;
   color: var(--econml-blue-dark);
   font-size: 1.35rem;
 }
 
+.theme-card h4 {
+  font-size: 1.2rem;
+}
+
 .theme-card p {
   line-height: 1.65;
+}
+
+.topic-list {
+  padding-left: 1.1rem;
+}
+
+.topic-list li {
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
 }
 
 .call-for-contributions {
@@ -115,6 +133,27 @@ h6,
 
 .call-for-contributions h3 {
   font-size: 1.5rem;
+}
+
+.call-for-contributions h4 {
+  margin-bottom: 0.75rem;
+  color: var(--econml-blue-dark);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.detail-list {
+  padding-left: 1.2rem;
+}
+
+.detail-list li {
+  margin-bottom: 0.6rem;
+  line-height: 1.65;
+}
+
+.detail-list code {
+  color: var(--econml-blue-dark);
+  word-break: break-word;
 }
 
 .important-dates {
@@ -143,11 +182,19 @@ h6,
   display: grid;
   grid-template-columns: 3rem minmax(0, 1fr);
   column-gap: 1.5rem;
+  align-items: center;
   min-height: 4.5rem;
+  padding-bottom: 1.35rem;
+  border-bottom: 1px solid rgba(10, 88, 202, 0.14);
 }
 
 .date-timeline-item:not(:last-child) {
   margin-bottom: 1.25rem;
+}
+
+.date-timeline-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .date-timeline-content {
@@ -155,13 +202,6 @@ h6,
   grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.9fr);
   column-gap: 2rem;
   align-items: baseline;
-  padding: 0.35rem 0 1.35rem;
-  border-bottom: 1px solid rgba(10, 88, 202, 0.14);
-}
-
-.date-timeline-item:last-child .date-timeline-content {
-  padding-bottom: 0.35rem;
-  border-bottom: 0;
 }
 
 .date-icon {
@@ -225,7 +265,6 @@ h6,
   .date-timeline-content {
     grid-template-columns: 1fr;
     row-gap: 0.35rem;
-    padding-top: 0.2rem;
   }
 
   .date-note {
