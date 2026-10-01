@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Call for Papers | EconML@NeurIPS26</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&amp;family=Lora:wght@500;600;700&amp;display=swap" rel="stylesheet">
+    <link id="site-styles" rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script>
+      const siteStyles = document.getElementById("site-styles");
+      siteStyles.href = `styles.css?v=${encodeURIComponent(document.lastModified)}`;
+    </script>
+    <style>
+      a:link {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .headshots {
+        padding-top: 1.2em;
+        text-align: center;
+      }
+      .headshots img {
+        padding-bottom: 0.4em;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      h3 {
+        font-size: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">EconML @ NeurIPS'26</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#speakers">Keynote Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="cfp.html">Call for Papers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#graduation-spotlights">Graduation Spotlights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#important-dates">Important Dates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#organizers">Organizers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Call for Papers -->
+    <section class="call-for-contributions py-5" id="call-for-papers">
+      <div class="container">
+        <h2>Call for Papers</h2>
+        <p>
+          We invite submissions that connect economic ideas to core questions in theoretical and applied machine learning.
+        </p>
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6">
+            <article class="theme-card">
+              <h4>Theme 1: Economics in Training, Alignment, and Evaluation</h4>
+              <p>Using economic ideas to improve learning and alignment, explain the limitations of existing algorithms and paradigms, and align incentives in local economic interactions around AI systems.</p>
+              <p>Topics include, but are not limited to:</p>
+              <ul class="topic-list mb-0">
+                <li>Preference aggregation for alignment and its limitations</li>
+                <li>Pricing of data, training, and inference</li>
+                <li>Social choice and auction mechanisms for steering alignment</li>
+                <li>Strategic behavior in model evaluation, and the design of incentive-aware evaluation</li>
+                <li>Strategic classification</li>
+                <li>Mechanisms for eliciting high-quality data and feedback</li>
+                <li>Discrete choice and behavioral modeling in learning pipelines</li>
+                <li>AI decision making and bias in economic contexts</li>
+                <li>Algorithmic collective action</li>
+                <li>Formal abstractions of AI rationality and bias in economic contexts</li>
+                <li>New formal models of incentive misalignment and information gaps around AI systems</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-lg-6">
+            <article class="theme-card">
+              <h4>Theme 2: Ecosystems with Many Interacting Models</h4>
+              <p>New failure modes and economic levers that emerge when many models operate in the same environment.</p>
+              <p>Topics include, but are not limited to:</p>
+              <ul class="topic-list mb-0">
+                <li>Competition between AI service providers</li>
+                <li>AI supply chains and their dynamics</li>
+                <li>Algorithmic collusion among learning systems</li>
+                <li>Algorithmic monoculture and model multiplicity</li>
+                <li>Market concentration among AI service providers</li>
+                <li>Multi-agent learning dynamics in economic environments</li>
+                <li>Pricing and evaluation of many interacting agents</li>
+                <li>Feedback loops and performative prediction effects</li>
+                <li>Ecosystem-level incentive design</li>
+                <li>New formal models of emerging economic phenomena around AI systems</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+        <div class="mt-5">
+          <h4>Emphasis Across Both Themes</h4>
+          <p>We especially encourage contributions along the following directions:</p>
+          <ul class="detail-list">
+            <li><b>Emerging domains:</b> Submissions that are looking to motivate an emerging topic, problem or direction. Clearly articulated motivation and a rigorous formal model that can spur interesting discussion and motivate further inquiry.</li>
+            <li><b>Unique economic properties:</b> Solutions made possible by, or risks arising from, the unique properties of machine learning models and AI systems.</li>
+            <li><b>Insights across scales:</b> Work spanning multiple scales, e.g. connecting micro-scale phenomena to ecosystem-level analysis, or exploring systems at &ldquo;intermediate&rdquo; scales.</li>
+            <li><b>Empirical evidence:</b> Empirical evidence of economic phenomena, and empirical evaluation of theoretical models.</li>
+          </ul>
+        </div>
+        <div class="mt-5">
+          <h4>Submission Guidelines</h4>
+          <ul class="detail-list">
+            <li><b>Style:</b> Submissions must use the <a href="https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip">NeurIPS 2026 style file</a>, include the <a href="https://neurips.cc/public/guides/PaperChecklist">NeurIPS paper checklist</a>, and be submitted as a PDF. Review process will follow the <a href="https://neurips.cc/Conferences/2026/MainTrackHandbook">NeurIPS 2026 Main Track Handbook</a> guidelines.</li>
+            <li><b>Length:</b> Submissions will be classified into two tracks based on paper length. For long papers, the main text of a submitted paper is limited to nine (9) content pages, including all figures and tables. For short papers, the main text of a submitted paper is limited to four (4) content pages, including all figures and tables. References, appendices and checklist are not included in the page limit, but the main text must be self-contained. Reviewers are not required to read beyond the main text.</li>
+            <li><b>Anonymization:</b> Submissions must be properly anonymized for double-blind review. Use <code>\usepackage[dblblindworkshop]{neurips_2026}</code> and <code>\workshoptitle{Economics for Machine Learning}</code> when importing the NeurIPS 2026 style files.</li>
+            <li><b>Submission to multiple venues:</b> We will also accept papers that are under review at the time of submission, or that have been recently accepted, provided they do not breach any dual-submission policies of those venues. We discourage dual submissions within NeurIPS 2026 itself - to multiple NeurIPS workshops, or concurrently to this workshop and the NeurIPS 2026 main track. Extended abstracts of papers under review at other conferences/journals can be submitted if this is ok for the conference/journal in question (if in doubt, please check with them first). <i>(Updated 2026-08-12)</i></li>
+            <li><b>Organizers conflicts of interest:</b> In alignment with the NeurIPS workshop organization guidelines, current students, postdocs, or hosts of organizers should not submit papers to the workshop. In addition, an organizer will not be involved in assessing a submission from someone within the same organization. <i>(Updated 2026-08-12)</i></li>
+            <li><b>Posters and spotlight presentations:</b> Accepted papers will be presented as posters, and may also be invited to give a spotlight presentation.</li>
+            <li><b>In-person attendance:</b> All accepted papers are required to have at least one author present the paper in-person in Atlanta.</li>
+            <li><b>Non-archival:</b> Accepted contributions will not appear in formal proceedings.</li>
+            <li><b>Reciprocal review:</b> To ensure adequate reviewing coverage, qualified authors may be asked to serve as reviewers for the workshop. The submission form includes a reciprocal reviewing clause. In general, we consider authors who have published relevant work in the main tracks of conferences such as NeurIPS, ICML, ICLR, AAAI, EC, or WWW, either as lead authors or senior authors, to be qualified reviewers. If none of the authors meets these criteria, please nominate the author who is best qualified to serve as a reviewer and inform the workshop organizers before the submission deadline.</li>
+            <li><b>LLM use:</b> We follow the <a href="https://neurips.cc/Conferences/2026/MainTrackHandbook">NeurIPS 2026 Main Track Handbook</a> policy on LLM use.</li>
+          </ul>
+        </div>
+        <div class="alert alert-light fw-normal text-center mt-4 mb-4">
+          <div><span class="fw-semibold">Submission deadline:</span> <time datetime="2026-08-29">August 29, 2026</time> (Anywhere on Earth)</div>
+          <div>Paper submissions are now closed.</div>
+        </div>
+        <div class="mt-5">
+          <a href="index.html">&larr; Back to the workshop page</a>
+        </div>
+      </div>
+    </section>
+    <section class="container my-5" id="contact">
+      <h2>Contact</h2>
+      <span>For inquiries, please contact <a href="mailto:neurips-2026-econml-workshop@googlegroups.com">neurips-2026-econml-workshop@googlegroups.com</a>.</span>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
